@@ -489,6 +489,7 @@ def binarySearchSingle(sortedList,target):
 ### Bubble Sort
 
 Time Complexity: O(n) [minimum] & O(n^2) [maximum]
+Exact Steps: n^2 - n
 Space Complexity: O(1)
 
 
@@ -522,8 +523,11 @@ def bubbleSort(unsortedList):
 
 ### Insertion Sort
 
-Time Complexity: O(n) [minimum] & O(n^2) 
+Time Complexity: O(n) [minimum] & O(n^2) [maximum]
+Exact Steps: n^2 - n - 2
 Space Complexity: O(1)
+
+Best used when array is almost sorted
 
 #### Algorithm
 
@@ -553,7 +557,25 @@ def shift(arr,start,end):
         arr[i] = arr[i-1]
     arr[start] = newstart
 ```
+<br>
 
+### Selection Sort
+
+Time Complexity: O(n^2) [minimum] & O(n^2) [maximum]
+Exact Steps: (n^2 - n - 2) / 2
+Space Complexity: O(1)
+
+Best among non-recursive algorithms with an unsorted array
+
+#### Algorithm
+
+
+
+<br>
+
+```
+
+```
 <br>
 
 ### Quick Sort
@@ -1723,4 +1745,5 @@ If there are CSS files, all css files and other files (e.g. images) are to be pl
     </body>
 </html>
 ```
+
 
